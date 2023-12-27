@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6D6DC"
+    tools:context=".activity10">
+
+    <TextView
+        android:id="@+id/ForgetPasswordText"
+        android:layout_width="410dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="100dp"
+        android:text="Forget Password"
+        android:textAlignment="center"
+        android:textColor="#0B0A0A"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/EnterText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PhoneNumber"
+        android:layout_width="299dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="391dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EnterText" />
+
+    <TextView
+        android:id="@+id/EnterText"
+        android:layout_width="381dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Enter your Phone Number to get OTP."
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/PhoneNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ForgetPasswordText" />
+
+    <Button
+        android:id="@+id/OTPButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="157dp"
+        android:text="Get OTP"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumber"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/NextButton"
+        android:layout_width="105dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="234dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="43dp"
+        android:text="Next"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumber" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="105dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="624dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="58dp"
+        android:text="Back"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/PersonalDetailButton"
+        app:layout_constraintEnd_toStartOf="@+id/ContactUs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownIdInLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

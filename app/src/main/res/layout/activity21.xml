@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6D6DC"
+    tools:context=".activity21">
+
+    <TextView
+        android:id="@+id/Background5"
+        android:layout_width="438dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="64dp"
+        android:background="#6750A3"
+        app:layout_constraintBottom_toTopOf="@+id/Background3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ContactUs"
+        tools:ignore="NotSibling" />
+
+
+    <TextView
+        android:id="@+id/Background3"
+        android:layout_width="438dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="36dp"
+        android:background="#6750A2"
+        app:layout_constraintBottom_toTopOf="@+id/Background4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Background5"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/Background4"
+        android:layout_width="438dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="131dp"
+        android:background="#6750A2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Background3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ContactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:text="Contact Us"
+        android:textColor="#100F0F"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownIdInLayout" />
+
+    <ImageView
+        android:id="@+id/Phoneimg"
+        android:layout_width="76dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/Background5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Back"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+    <TextView
+        android:id="@+id/PhoneNum"
+        android:layout_width="185dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="47dp"
+        android:text="013-2948235"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Background5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toEndOf="@+id/Phoneimg"
+        app:layout_constraintTop_toBottomOf="@+id/ContactUs"
+        app:layout_constraintVertical_bias="0.771" />
+
+    <ImageView
+        android:id="@+id/EmailImg"
+        android:layout_width="76dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="53dp"
+        app:layout_constraintBottom_toTopOf="@+id/Background3"
+        app:layout_constraintEnd_toEndOf="@+id/Background3"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Background5"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/sym_action_email" />
+
+    <TextView
+        android:id="@+id/emailadd"
+        android:layout_width="251dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="80dp"
+        android:text="Theship@gmail.com"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Background3"
+        app:layout_constraintEnd_toEndOf="@+id/Background3"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toEndOf="@+id/EmailImg"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNum"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="76dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailImg"
+        app:layout_constraintVertical_bias="0.282"
+        app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="254dp"
+        android:layout_height="71dp"
+        android:text="No1, Lorong Bayu Mewah 9, Bayu Mewah"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Background4"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/emailadd"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="105dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="51dp"
+        android:text="Back"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Background5"
+        app:layout_constraintEnd_toStartOf="@+id/ContactUs"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="418dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="20dp"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MenuButton"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottomnav"
+        tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

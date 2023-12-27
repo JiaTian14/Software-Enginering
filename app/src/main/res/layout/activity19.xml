@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="406dp"
+    android:layout_height="match_parent"
+    android:background="#E6D6DC"
+    tools:context=".activity19">
+
+
+    <TextView
+        android:id="@+id/ContactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:text="Setting"
+        android:textColor="#100F0F"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <Button
+        android:id="@+id/FavouriteButton"
+        android:layout_width="456dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="20dp"
+        android:text="Favourite"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ContactButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Notification" />
+
+    <Button
+        android:id="@+id/ContactButton"
+        android:layout_width="456dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="162dp"
+        android:text="Contact Us"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FavouriteButton" />
+
+    <Switch
+        android:id="@+id/Notification"
+        android:layout_width="356dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="180dp"
+        android:background="#6750A3"
+        android:text="         Notification"
+        android:textAlignment="center"
+        android:textColor="#FEFEFE"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/FavouriteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="105dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="58dp"
+        android:text="Back"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/ContactUs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="418dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="20dp"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MenuButton"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottomnav"
+        tools:ignore="MissingConstraints,UnknownIdInLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
